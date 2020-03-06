@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA;;;;yDAIyD;AAEzD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,IAAI;CAIjB;;ACSC,MAAM,EAAE,SAAS,EAAE,KAAK;EDd1B,AAAA,IAAI,CAAC;IAGD,UAAU,EAAE,KAAK;GAEpB;;;AAED;;yDAEyD",
+    "sources": [
+        "../sass/index.scss",
+        "../sass/_parameter.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
