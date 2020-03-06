@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------
 
  reset
@@ -165,4 +166,80 @@ ol,
 ul {
   list-style: none;
 }
-/*# sourceMappingURL=reset.css.map */
+
+/*------------------------------------------------------
+
+ module
+
+/*-----------------------------------------------------*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+p,
+a,
+li,
+table,
+tr,
+td,
+span {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  p,
+  a,
+  li,
+  table,
+  tr,
+  td,
+  span {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+}
+
+a {
+  color: #1a1a1a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------
+
+ 下層ページ
+
+/*-----------------------------------------------------*/
+main {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 100px;
+  }
+}
+
+/*------------------------------------------------------
+ 下層ページ sub-page-top
+/*-----------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
