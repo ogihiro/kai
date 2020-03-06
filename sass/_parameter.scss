@@ -1,0 +1,48 @@
+// ブレイクポイント
+
+$sp: 544px;
+$under-pc: 767px;
+$pc: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+@mixin under-pc {
+  @media (max-width: ($under-pc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: ($xxl)) {
+    @content;
+  }
+}
+
+// フォント定義
+
+// カラー定義
