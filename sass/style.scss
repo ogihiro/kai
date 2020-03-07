@@ -1,7 +1,421 @@
 @import "_reset.scss";
 @import "_module.scss";
+
+.pr-lead-wrapper {
+  background: $brown url("/images/lead_bg.png") repeat;
+  padding: 30px;
+}
+
 /*------------------------------------------------------
-
- 下層ページ
-
+当店のこだわり
 /*-----------------------------------------------------*/
+.committed-wrapper {
+  text-align: center;
+  padding: 30px 15px 0px;
+  @include pc {
+    padding: 70px 0 0;
+  }
+  h2 {
+    font-size: 3.5rem;
+    color: $brown;
+    margin-bottom: 40px;
+    @include pc {
+      font-size: 4rem;
+    }
+  }
+  .committed-lead {
+    margin-bottom: 40px;
+    @include under-pc {
+      text-align: left;
+    }
+  }
+}
+
+.committed-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include under-pc {
+    margin-bottom: 30px;
+  }
+  .committed-image {
+    @include pc {
+      width: 50%;
+    }
+    @include under-pc {
+      margin-bottom: 15px;
+    }
+    img {
+      object-fit: cover;
+      @include pc {
+        height: 100%;
+      }
+    }
+  }
+  .committed-text {
+    @include pc {
+      width: 45%;
+      margin: 0 auto;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+    h3 {
+      color: $brown;
+      margin-bottom: 30px;
+    }
+
+    .text {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    .image-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      img {
+        width: 48%;
+        @include pc {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+.committed-inner.pattern-2 {
+  .committed-image {
+    @include pc {
+      order: 2;
+    }
+  }
+  .committed-text {
+    @include pc {
+      order: 1;
+    }
+  }
+}
+
+/*------------------------------------------------------
+当店のこだわり
+/*-----------------------------------------------------*/
+.scene-wrapper {
+  background-color: #f4f3ef;
+  padding: 30px 15px;
+  @include pc {
+    padding-bottom: 70px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    .subtitle {
+      color: $brown;
+    }
+  }
+}
+
+.scene-innner {
+  max-width: 540px;
+  margin: 0 auto;
+
+  @include pc {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .scene-box-1 {
+    &:before {
+      background-image: url("/images/party-elected_02.png");
+    }
+  }
+  .scene-box-2 {
+    &:before {
+      background-image: url("/images/party-elected_02.png");
+    }
+  }
+  .scene-box-3 {
+    &:before {
+      background-image: url("/images/party-elected_02.png");
+    }
+  }
+
+  .scene-box {
+    &::before {
+      top: 0;
+      left: 0;
+      content: "";
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      vertical-align: middle;
+      margin-left: -15px;
+      @include pc {
+        margin-left: -20px;
+      }
+    }
+  }
+  .scene-box {
+    background-color: #fff;
+    padding: 0 15px 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @include pc {
+        margin-bottom: 0;
+      }
+    }
+
+    @include pc {
+      width: 27%;
+      padding: 0 20px 60px;
+      position: relative;
+    }
+
+    .scene-image {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto 20px;
+    }
+    .scene-title {
+      color: $brown;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include pc {
+        font-size: 1.9rem;
+      }
+    }
+
+    .scene-text {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include pc {
+        font-size: 1.5rem;
+      }
+    }
+    .recommend-btn {
+      text-align: center;
+      padding: 5px;
+      width: 80%;
+      max-width: 250px;
+      margin: 0 auto;
+      background-color: $brown;
+      display: block;
+
+      @include pc {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+      }
+      span {
+        border: 1px solid #fff;
+        background-color: $brown;
+        font-family: "Noto Serif JP", serif;
+        color: #fff;
+        display: block;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: block;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------
+選べる５会場
+/*-----------------------------------------------------*/
+.hall-guide-wrapper {
+  padding: 30px 0;
+  h2 {
+    text-align: center;
+    color: $brown;
+    margin-bottom: 30px;
+    .subtitle {
+      color: $brown;
+      display: block;
+    }
+  }
+}
+
+.hall-guide-container {
+  background: linear-gradient(to bottom, #d6d5d5, #fff 30%);
+}
+
+.hall-guide-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 30px 15px;
+
+  @include pc {
+    max-width: 1140px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .hall-image {
+    text-align: center;
+    margin-bottom: 15px;
+    @include pc {
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .hall-guide-box {
+    @include pc {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .about-hall {
+    margin-bottom: 15px;
+    @include pc {
+      margin-right: 30px;
+      margin: 0 auto;
+      width: 48%;
+    }
+  }
+  .hall-name {
+    margin-bottom: 10px;
+    color: $navy;
+    font-size: 2.3rem;
+    @include pc {
+      font-size: 3rem;
+    }
+  }
+  .hall-text {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    @include pc {
+      font-size: 1.4rem;
+    }
+  }
+  .hall-people {
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.6rem;
+    @include pc {
+      font-size: 2rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.hall-detail {
+  @include pc {
+    width: 48%;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  dt,
+  dd {
+    padding: 10px 0 10px 10px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    @include pc {
+      padding: 15px 0 15px 10px;
+    }
+  }
+  dt {
+    width: 30%;
+    background-color: $navy;
+    color: #fff;
+    margin-right: 5px;
+  }
+  dd {
+    width: 62%;
+    background-color: #f6f6f6;
+  }
+  .last {
+    @include pc {
+      margin-bottom: 0;
+    }
+  }
+}
+/*------------------------------------------------------
+SERVICE
+/*-----------------------------------------------------*/
+.service-wrapper {
+  padding: 30px 15px;
+  background-color: #eef3f9;
+  @include pc {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  h2 {
+    text-align: center;
+    color: $navy;
+    margin-bottom: 40px;
+    .subtitle {
+      color: $navy;
+      display: block;
+    }
+  }
+}
+
+.service-innenr {
+  .service-lead {
+    margin-bottom: 40px;
+    @include pc {
+      text-align: center;
+    }
+  }
+}
+
+.service-list-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+  @include pc {
+    &::before {
+      content: "";
+      display: block;
+      width: 23%;
+      order: 1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 23%;
+    }
+  }
+  .service-item {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    @include pc {
+      width: 23%;
+      margin-bottom: 30px;
+      &:nth-child(4n + 1):nth-last-child(-n + 4),
+      &:nth-child(4n + 1):nth-last-child(-n + 4) ~ li {
+        margin-bottom: 0px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      display: block;
+      font-size: 1.3rem;
+      padding: 10px;
+      @include pc {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

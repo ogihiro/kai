@@ -27,11 +27,10 @@ table,
 tr,
 td,
 span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.6;
 
   @include pc {
-    font-size: 1.5rem;
     line-height: 1.8;
   }
 }
@@ -39,6 +38,7 @@ span {
 a {
   color: $black;
   transition: 0.2s;
+  text-decoration: none;
 
   &:hover {
     transition: 0.2s;
@@ -52,8 +52,43 @@ a {
 /*-----------------------------------------------------*/
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-family: "Noto Serif JP", serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 2px;
   @include pc {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 }
+
+h2 {
+  font-size: 2rem;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 1.5px;
+  @include pc {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  @include pc {
+    font-size: 2.6rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  @include pc {
+    font-size: 1.6rem;
+  }
+}
+
+/*------------------------------------------------------
+フォントサイズ調整
+/*-----------------------------------------------------*/
