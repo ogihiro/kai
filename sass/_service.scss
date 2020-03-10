@@ -1,0 +1,77 @@
+/*------------------------------------------------------
+SERVICE
+/*-----------------------------------------------------*/
+.service-wrapper {
+  padding: 30px 15px;
+  background-color: #eef3f9;
+  @include pc {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  h2 {
+    text-align: center;
+    color: $navy;
+    margin-bottom: 40px;
+    .subtitle {
+      color: $navy;
+      display: block;
+    }
+  }
+}
+
+.service-innenr {
+  .service-lead {
+    margin-bottom: 40px;
+    @include pc {
+      text-align: center;
+    }
+  }
+}
+
+.service-list-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+  @include pc {
+    &::before {
+      content: "";
+      display: block;
+      width: 23%;
+      order: 1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 23%;
+    }
+  }
+  .service-item {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    @include pc {
+      width: 23%;
+      margin-bottom: 30px;
+      &:nth-child(4n + 1):nth-last-child(-n + 4),
+      &:nth-child(4n + 1):nth-last-child(-n + 4) ~ li {
+        margin-bottom: 0px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      display: block;
+      font-size: 1.3rem;
+      padding: 10px;
+      @include pc {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

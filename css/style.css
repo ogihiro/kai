@@ -212,13 +212,11 @@ span {
 
 a {
   color: #1a1a1a;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   text-decoration: none;
 }
 
 a:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #1a1a1a;
   text-decoration: none;
@@ -280,6 +278,9 @@ h3 {
 /*------------------------------------------------------
 フォントサイズ調整
 /*-----------------------------------------------------*/
+/*------------------------------------------------------
+リード
+/*-----------------------------------------------------*/
 .pr-lead-wrapper {
   background: #968767 url("/images/lead_bg.png") repeat;
   padding: 30px;
@@ -322,17 +323,9 @@ h3 {
 }
 
 .committed-inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (max-width: 767px) {
@@ -354,8 +347,7 @@ h3 {
 }
 
 .committed-inner .committed-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -384,17 +376,9 @@ h3 {
 }
 
 .committed-inner .committed-text .image-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .committed-inner .committed-text .image-box img {
@@ -409,24 +393,18 @@ h3 {
 
 @media (min-width: 768px) {
   .committed-inner.pattern-2 .committed-image {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 }
 
 @media (min-width: 768px) {
   .committed-inner.pattern-2 .committed-text {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 }
 
 /*------------------------------------------------------
-当店のこだわり
+人気のご利用シーン
 /*-----------------------------------------------------*/
 .scene-wrapper {
   background-color: #f4f3ef;
@@ -456,14 +434,8 @@ h3 {
 @media (min-width: 768px) {
   .scene-innner {
     max-width: 1140px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin: 0 auto;
   }
 }
@@ -600,8 +572,6 @@ h3 {
 }
 
 .hall-guide-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d6d5d5), color-stop(30%, #fff));
-  background: -webkit-linear-gradient(top, #d6d5d5, #fff 30%);
   background: linear-gradient(to bottom, #d6d5d5, #fff 30%);
 }
 
@@ -636,14 +606,8 @@ h3 {
 
 @media (min-width: 768px) {
   .hall-guide-inner .hall-guide-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -704,13 +668,8 @@ h3 {
 }
 
 .hall-detail dl {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .hall-detail dt,
@@ -782,19 +741,11 @@ SERVICE
 }
 
 .service-list-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 1140px;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -802,10 +753,7 @@ SERVICE
     content: "";
     display: block;
     width: 23%;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .service-list-box::after {
     content: "";
