@@ -724,17 +724,17 @@ SERVICE
   display: block;
 }
 
-.service-innenr {
+.service-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.service-innenr .service-lead {
+.service-inner .service-lead {
   margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
-  .service-innenr .service-lead {
+  .service-inner .service-lead {
     text-align: center;
   }
 }
