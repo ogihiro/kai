@@ -392,14 +392,8 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .committed-inner.pattern-2 .committed-image {
-    order: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .committed-inner.pattern-2 .committed-text {
-    order: 1;
+  .committed-inner.pattern-2 {
+    flex-flow: row-reverse;
   }
 }
 

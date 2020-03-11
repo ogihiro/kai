@@ -76,15 +76,8 @@
 }
 
 .committed-inner.pattern-2 {
-  .committed-image {
-    @include pc {
-      order: 2;
-    }
-  }
-  .committed-text {
-    @include pc {
-      order: 1;
-    }
+  @include pc {
+    flex-flow: row-reverse;
   }
 }
 
