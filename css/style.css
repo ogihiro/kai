@@ -734,7 +734,7 @@ SERVICE
 }
 
 @media (min-width: 768px) {
-  .service-inner .service-lead {
+  .service-innenr .service-lead {
     text-align: center;
   }
 }
