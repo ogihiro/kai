@@ -724,16 +724,12 @@ SERVICE
   display: block;
 }
 
-<<<<<<< HEAD
 .service-innenr {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .service-innenr .service-lead {
-=======
-.service-inner .service-lead {
->>>>>>> origin/master
   margin-bottom: 40px;
 }
 
@@ -746,11 +742,6 @@ SERVICE
 .service-list-box {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-  max-width: 1200px;
-  margin: 0 auto;
->>>>>>> origin/master
   justify-content: space-between;
 }
 
