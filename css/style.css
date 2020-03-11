@@ -724,6 +724,11 @@ SERVICE
   display: block;
 }
 
+.service-innenr {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .service-innenr .service-lead {
   margin-bottom: 40px;
 }
@@ -737,8 +742,6 @@ SERVICE
 .service-list-box {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1140px;
-  margin: 0 auto;
   justify-content: space-between;
 }
 

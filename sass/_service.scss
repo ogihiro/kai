@@ -20,6 +20,8 @@ SERVICE
 }
 
 .service-innenr {
+  max-width: 1140px;
+  margin: 0 auto;
   .service-lead {
     margin-bottom: 40px;
     @include pc {
@@ -31,8 +33,6 @@ SERVICE
 .service-list-box {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1140px;
-  margin: 0 auto;
   justify-content: space-between;
   @include pc {
     &::before {
