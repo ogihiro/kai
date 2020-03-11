@@ -1,0 +1,32 @@
+/*------------------------------------------------------
+DRINK
+/*-----------------------------------------------------*/
+.drink-inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.drink-list-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .drink-list-box {
+    width: 100%;
+    @include pc {
+      width: 48%;
+    }
+    .bl_drink-cate {
+      margin-bottom: 15px;
+      h4 {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
