@@ -9,7 +9,8 @@
         "../sass/_mainvisual.scss",
         "../sass/_committed.scss",
         "../sass/_floor.scss",
-        "../sass/_service.scss"
+        "../sass/_service.scss",
+        "../sass/_course.scss"
     ],
     "names": [],
     "file": "style.css"
