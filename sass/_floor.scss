@@ -3,15 +3,6 @@
 /*-----------------------------------------------------*/
 .hall-guide-wrapper {
   padding: 30px 0;
-  h2 {
-    text-align: center;
-    color: $brown;
-    margin-bottom: 30px;
-    .subtitle {
-      color: $brown;
-      display: block;
-    }
-  }
 }
 
 .hall-guide-container {
@@ -19,7 +10,7 @@
 }
 
 .hall-guide-inner {
-  max-width: 540px;
+  dmax-width: 540px;
   margin: 0 auto;
   padding: 30px 15px;
 

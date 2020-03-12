@@ -223,7 +223,7 @@ a:hover {
 }
 
 /*------------------------------------------------------
-フォントサイズ調整
+見出し
 /*-----------------------------------------------------*/
 h1 {
   font-size: 2.2rem;
@@ -237,18 +237,6 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     font-size: 3.2rem;
-  }
-}
-
-h2 {
-  font-size: 2rem;
-  font-family: "Noto Serif JP", serif;
-  letter-spacing: 1.5px;
-}
-
-@media (min-width: 768px) {
-  h2 {
-    font-size: 3rem;
   }
 }
 
@@ -275,6 +263,28 @@ h3 {
   }
 }
 
+.contents-title {
+  text-align: center;
+  color: #171c61;
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .contents-title {
+    font-size: 4rem;
+  }
+}
+
+.contents-title .subtitle {
+  margin-top: 10px;
+  display: block;
+}
+
 /*------------------------------------------------------
 フォントサイズ調整
 /*-----------------------------------------------------*/
@@ -297,18 +307,6 @@ h3 {
 @media (min-width: 768px) {
   .committed-wrapper {
     padding: 70px 0 0;
-  }
-}
-
-.committed-wrapper h2 {
-  font-size: 3.5rem;
-  color: #968767;
-  margin-bottom: 40px;
-}
-
-@media (min-width: 768px) {
-  .committed-wrapper h2 {
-    font-size: 4rem;
   }
 }
 
@@ -554,23 +552,12 @@ h3 {
   padding: 30px 0;
 }
 
-.hall-guide-wrapper h2 {
-  text-align: center;
-  color: #968767;
-  margin-bottom: 30px;
-}
-
-.hall-guide-wrapper h2 .subtitle {
-  color: #968767;
-  display: block;
-}
-
 .hall-guide-container {
   background: linear-gradient(to bottom, #d6d5d5, #fff 30%);
 }
 
 .hall-guide-inner {
-  max-width: 540px;
+  dmax-width: 540px;
   margin: 0 auto;
   padding: 30px 15px;
 }
@@ -713,17 +700,6 @@ SERVICE
   }
 }
 
-.service-wrapper h2 {
-  text-align: center;
-  color: #171c61;
-  margin-bottom: 40px;
-}
-
-.service-wrapper h2 .subtitle {
-  color: #171c61;
-  display: block;
-}
-
 .service-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -833,4 +809,8 @@ DRINK
 .drink-list-cont .drink-list-box .bl_drink-cate span {
   font-size: 1.3rem;
 }
+
+/*------------------------------------------------------
+STAFF
+/*-----------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

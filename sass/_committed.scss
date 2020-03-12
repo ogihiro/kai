@@ -7,14 +7,7 @@
   @include pc {
     padding: 70px 0 0;
   }
-  h2 {
-    font-size: 3.5rem;
-    color: $brown;
-    margin-bottom: 40px;
-    @include pc {
-      font-size: 4rem;
-    }
-  }
+
   .committed-lead {
     margin-bottom: 40px;
     @include under-pc {
