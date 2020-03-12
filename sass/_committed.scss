@@ -34,6 +34,7 @@
       object-fit: cover;
       @include pc {
         height: 100%;
+        width: 100%;
       }
     }
   }
