@@ -103,6 +103,18 @@ h3 {
   }
 }
 
+.bl-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 30px 15px;
+
+  @include pc {
+    max-width: 1200px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
 /*------------------------------------------------------
 フォントサイズ調整
 /*-----------------------------------------------------*/

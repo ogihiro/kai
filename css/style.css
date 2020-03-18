@@ -291,6 +291,20 @@ h3 {
   display: block;
 }
 
+.bl-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+@media (min-width: 768px) {
+  .bl-inner {
+    max-width: 1200px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
 /*------------------------------------------------------
 フォントサイズ調整
 /*-----------------------------------------------------*/
@@ -413,7 +427,6 @@ h3 {
 /*-----------------------------------------------------*/
 .scene-wrapper {
   background-color: #f4f3ef;
-  padding: 30px 15px;
 }
 
 @media (min-width: 768px) {
@@ -431,14 +444,8 @@ h3 {
   color: #968767;
 }
 
-.scene-innner {
-  max-width: 540px;
-  margin: 0 auto;
-}
-
 @media (min-width: 768px) {
   .scene-innner {
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -569,89 +576,75 @@ h3 {
   background: linear-gradient(to bottom, #d6d5d5, #fff 30%);
 }
 
-.hall-guide-inner {
-  dmax-width: 540px;
-  margin: 0 auto;
-  padding: 30px 15px;
-}
-
-@media (min-width: 768px) {
-  .hall-guide-inner {
-    max-width: 1200px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-}
-
-.hall-guide-inner .hall-image {
+.hall-image {
   text-align: center;
   margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .hall-image {
+  .hall-image {
     margin-bottom: 30px;
   }
 }
 
-.hall-guide-inner .hall-image img {
+.hall-image img {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .hall-guide-box {
+  .hall-guide-box {
     display: flex;
     align-items: center;
   }
 }
 
-.hall-guide-inner .about-hall {
+.about-hall {
   margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .about-hall {
+  .about-hall {
     margin-right: 30px;
     margin: 0 auto;
     width: 48%;
   }
 }
 
-.hall-guide-inner .hall-name {
+.hall-name {
   margin-bottom: 10px;
   color: #171c61;
   font-size: 2.3rem;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .hall-name {
+  .hall-name {
     font-size: 3rem;
   }
 }
 
-.hall-guide-inner .hall-text {
+.hall-text {
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .hall-text {
+  .hall-text {
     font-size: 1.4rem;
   }
 }
 
-.hall-guide-inner .hall-people {
+.hall-people {
   font-family: "Noto Serif JP", serif;
   font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
-  .hall-guide-inner .hall-people {
+  .hall-people {
     font-size: 2rem;
   }
 }
 
-.hall-guide-inner .hall-people:not(:last-child) {
+.hall-people:not(:last-child) {
   margin-bottom: 0px;
 }
 
@@ -714,8 +707,8 @@ SERVICE
 }
 
 .service-inner {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .service-inner .service-lead {
@@ -785,12 +778,6 @@ SERVICE
 /*------------------------------------------------------
 DRINK
 /*-----------------------------------------------------*/
-.drink-inner {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .drink-list-cont {
   display: flex;
   flex-wrap: wrap;
