@@ -241,21 +241,6 @@ a:hover {
 /*------------------------------------------------------
 見出し
 /*-----------------------------------------------------*/
-h1 {
-  font-size: 2.2rem;
-  font-family: "Noto Serif JP", serif;
-  color: #fff;
-  text-align: center;
-  line-height: 1.7;
-  letter-spacing: 2px;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-
 h3 {
   font-size: 1.8rem;
   font-family: "Noto Serif JP", serif;
@@ -403,7 +388,22 @@ tel お問い合わせ
 
 .pr-lead-wrapper {
   background: #968767 url("/images/lead_bg.png") repeat;
-  padding: 30px;
+  padding: 30px 15px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-family: "Noto Serif JP", serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
 }
 
 /*------------------------------------------------------
