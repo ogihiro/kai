@@ -292,7 +292,7 @@ h3 {
 }
 
 /*------------------------------------------------------
-フォントサイズ調整
+フォント
 /*-----------------------------------------------------*/
 /*------------------------------------------------------
 リード
@@ -826,4 +826,82 @@ DRINK
 /*------------------------------------------------------
 STAFF
 /*-----------------------------------------------------*/
+.staff-inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.staff-inner .staff-read-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bl-section-staff {
+  margin-bottom: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bl-section-staff .section-image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bl-section-staff .section-image {
+    width: 30%;
+  }
+}
+
+.bl-section-staff .section-staff-text-box {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bl-section-staff .section-staff-text-box {
+    width: 66%;
+  }
+}
+
+.bl-section-staff .section-staff-text-box h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .bl-section-staff .section-staff-text-box h3 {
+    font-size: 2.8rem;
+    margin: 0 0 20px;
+  }
+}
+
+.bl-section-staff .section-staff-text-box .text-area p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bl-section-staff .section-staff-text-box .position-name {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .bl-section-staff .section-staff-text-box .position-name {
+    font-size: 2.2rem;
+  }
+}
+
+.footer-store-image {
+  background: url(../images/footer_store.jpg);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .footer-store-image {
+    height: 500px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

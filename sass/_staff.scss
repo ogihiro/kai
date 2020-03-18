@@ -1,3 +1,60 @@
 /*------------------------------------------------------
 STAFF
 /*-----------------------------------------------------*/
+.staff-inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  .staff-read-text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.bl-section-staff {
+  margin-bottom: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .section-image {
+    width: 100%;
+    @include pc {
+      width: 30%;
+    }
+  }
+  .section-staff-text-box {
+    width: 100%;
+    @include pc {
+      width: 66%;
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 20px 0;
+      @include pc {
+        font-size: 2.8rem;
+        margin: 0 0 20px;
+      }
+    }
+    .text-area {
+      p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    .position-name {
+      @include noto-serif;
+      font-size: 1.8rem;
+      margin-top: 20px;
+      @include pc {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+.footer-store-image {
+  background: url(../images/footer_store.jpg);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  @include pc {
+    height: 500px;
+  }
+}
