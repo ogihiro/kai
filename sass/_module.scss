@@ -46,27 +46,22 @@ a {
     text-decoration: none;
   }
 }
-
+.d-none {
+  display: none !important;
+}
+.d-md-block {
+  @include pc {
+    display: block !important;
+  }
+}
 .d-md-none {
   @include pc {
-    display: none;
+    display: none !important;
   }
 }
 /*------------------------------------------------------
 見出し
 /*-----------------------------------------------------*/
-
-h1 {
-  font-size: 2.2rem;
-  font-family: "Noto Serif JP", serif;
-  color: #fff;
-  text-align: center;
-  line-height: 1.7;
-  letter-spacing: 2px;
-  @include pc {
-    font-size: 3.2rem;
-  }
-}
 
 h3 {
   font-size: 1.8rem;
@@ -116,5 +111,78 @@ h3 {
 }
 
 /*------------------------------------------------------
-フォントサイズ調整
+フォント
 /*-----------------------------------------------------*/
+@mixin noto-serif {
+  font-family: "Noto Serif JP", serif;
+}
+
+/*------------------------------------------------------
+tel お問い合わせ
+/*-----------------------------------------------------*/
+.contact-tel-wrapper {
+  background: #968767;
+  padding: 30px 15px;
+  @include pc {
+    padding: 50px 15px;
+  }
+}
+.contact-tel-inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  .contact-tel-ttl {
+    font-size: 2.2rem;
+    color: #fff;
+    @include noto-serif;
+    line-height: 1.6;
+    @include pc {
+      font-size: 2.8rem;
+    }
+  }
+  .button-tel-sp {
+    background: #fff;
+    color: #968767;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    border-bottom: solid 4px #c0b7a3;
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      transform: translate3d(0, 4px, 0);
+      border-bottom: none;
+    }
+    span {
+      margin-left: 10px;
+      font-size: 2rem;
+      @include noto-serif;
+      letter-spacing: 2px;
+    }
+  }
+  .tel-btn {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .tel-pc {
+    font-size: 3rem;
+    color: #fff;
+    span {
+      font-size: 5rem;
+      color: #fff;
+      margin-left: 10px;
+      @include noto-serif;
+    }
+  }
+  .tel-text {
+    color: #fff;
+    margin-top: 1.5rem;
+    @include pc {
+      font-size: 2rem;
+    }
+  }
+}
