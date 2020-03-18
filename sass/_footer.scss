@@ -1,0 +1,40 @@
+/*------------------------------------------------------
+フッター
+/*-----------------------------------------------------*/
+footer {
+  margin-top: 50px;
+  @include pc {
+    margin-top: 100px;
+  }
+  .footer-inner {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .googlemap {
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 200px;
+      @include pc {
+        height: 300px;
+      }
+    }
+  }
+}
+.store-info-table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.store-info-table th,
+.store-info-table td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.store-info-table th {
+  width: 30%;
+  text-align: left;
+  background: #f4f4f4;
+}
