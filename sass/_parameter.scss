@@ -43,6 +43,10 @@ $xxl: 1600px;
   }
 }
 
+@mixin half-width($px: 20px) {
+  width: calc(50% - #{$px});
+}
+
 // フォント定義
 
 // カラー定義

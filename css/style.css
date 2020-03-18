@@ -793,7 +793,6 @@ h1 {
 SERVICE
 /*-----------------------------------------------------*/
 .service-wrapper {
-  padding: 30px 15px;
   background-color: #eef3f9;
 }
 
@@ -877,22 +876,127 @@ SERVICE
   margin-bottom: 30px;
 }
 
-.course-inner .course-name {
-  text-align: center;
+@media (min-width: 768px) {
+  .course-inner .contents-lead {
+    text-align: center;
+  }
 }
 
-.course-inner .course-price {
+.course-container:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .course-container:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+.course-container .course-name {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .course-container .course-name {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
+
+.course-container .course-price {
   text-align: center;
   font-size: 1.9rem;
   margin-bottom: 20px;
+  font-family: "Noto Serif JP", serif;
+  color: #968767;
 }
 
-.course-inner .course-image-box {
+@media (min-width: 768px) {
+  .course-container .course-price {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-intro-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .course-menu-box {
+    width: calc(50% - 20px);
+  }
+}
+
+.course-intro-box .course-image-box {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .course-image-box {
+    width: calc(50% - 20px);
+  }
+}
+
+.course-intro-box .menu-text {
   margin-bottom: 20px;
 }
 
-.course-inner .menu-text {
-  margin-bottom: 20px;
+.course-intro-box .menu-list-box {
+  border-radius: 10px;
+  background-color: #f4f3ef;
+  padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .menu-list-box {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.course-intro-box .menu-list-name {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .menu-list-name {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .menu-list {
+    width: calc(50% - 10px);
+  }
+}
+
+.course-intro-box .menu-list-item {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-indent: -20px;
+  padding-left: 20px;
+}
+
+.course-intro-box .menu-horizon {
+  border-top: solid 1px #707070;
+}
+
+@media (min-width: 768px) {
+  .course-intro-box .menu-horizon {
+    width: 100%;
+  }
+}
+
+.course-intro-box .menu-caution {
+  font-size: 1.3rem;
 }
 
 /*------------------------------------------------------

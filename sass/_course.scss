@@ -2,18 +2,99 @@
   .title-box {
     margin-bottom: 30px;
   }
+  .contents-lead {
+    @include pc {
+      text-align: center;
+    }
+  }
+}
+.course-container {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+    @include pc {
+      margin-bottom: 80px;
+    }
+  }
   .course-name {
-    text-align: center;
+    font-size: 1.8rem;
+    @include pc {
+      text-align: center;
+      font-size: 2.6rem;
+    }
   }
   .course-price {
     text-align: center;
     font-size: 1.9rem;
     margin-bottom: 20px;
+    font-family: "Noto Serif JP", serif;
+    color: $brown;
+    @include pc {
+      font-size: 2.6rem;
+    }
   }
+}
+
+.course-intro-box {
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .course-menu-box {
+    @include pc {
+      @include half-width;
+    }
+  }
+
   .course-image-box {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    @include pc {
+      @include half-width;
+    }
   }
+
   .menu-text {
     margin-bottom: 20px;
+  }
+
+  .menu-list-box {
+    border-radius: 10px;
+    background-color: #f4f3ef;
+    padding: 20px 15px;
+    @include pc {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  .menu-list-name {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+    @include pc {
+      width: 100%;
+    }
+  }
+  .menu-list {
+    @include pc {
+      @include half-width(10px);
+    }
+  }
+  .menu-list-item {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-indent: -20px;
+    padding-left: 20px;
+  }
+  .menu-horizon {
+    border-top: solid 1px #707070;
+    @include pc {
+      width: 100%;
+    }
+  }
+  .menu-caution {
+    font-size: 1.3rem;
   }
 }
