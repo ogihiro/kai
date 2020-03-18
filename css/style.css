@@ -873,6 +873,28 @@ SERVICE
   }
 }
 
+.course-inner .title-box {
+  margin-bottom: 30px;
+}
+
+.course-inner .course-name {
+  text-align: center;
+}
+
+.course-inner .course-price {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.course-inner .course-image-box {
+  margin-bottom: 20px;
+}
+
+.course-inner .menu-text {
+  margin-bottom: 20px;
+}
+
 /*------------------------------------------------------
 DRINK
 /*-----------------------------------------------------*/
@@ -931,6 +953,7 @@ STAFF
 
 .bl-section-staff .section-image {
   width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

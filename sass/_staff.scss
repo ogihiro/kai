@@ -17,6 +17,7 @@ STAFF
   justify-content: space-between;
   .section-image {
     width: 100%;
+    text-align: center;
     @include pc {
       width: 30%;
     }
